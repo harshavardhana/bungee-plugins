@@ -46,8 +46,6 @@ Imported into Bungee plugin project - Sub Licensed into Apache2.0
 Contributor: Harshavardhana <harsha@harshavardhana.net>
 """
 
-from __future__ import generators
-
 import sys
 import warnings
 import os
