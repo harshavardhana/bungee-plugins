@@ -7,13 +7,14 @@ from ctypes import c_char_p, c_int, c_size_t, c_void_p
 
 class LibmagicException(Exception): pass
 
+## ErrorCheck wrapper
 def errorcheck(result, func, args):
     err = magic_error(args[0])
     if err is not None:
         raise LibmagicException(err)
     else:
         return result
-
+## Encode Filename path with system Encoding
 def encode_filename(filename):
     if filename is None:
         return None
@@ -29,6 +30,8 @@ if dll:
 if not libmagic or not libmagic._name:
     # Raise import error since libmagic not installed
     raise ImportError('failed to find libmagic.  Please install libmagic')
+
+## Ctypes to PythonTypes conversion
 
 magic_t = ctypes.c_void_p
 

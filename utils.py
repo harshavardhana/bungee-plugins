@@ -6,7 +6,7 @@ from libmagic import magic_load, magic_open, magic_close, magic_buffer
 
 def mime_type(fd):
     """
-    Identify the contents of `fd`
+    Read the contents of `fd`
     """
     flags = MAGIC_NONE
     flags |= MAGIC_MIME
