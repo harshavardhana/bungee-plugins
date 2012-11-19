@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 #
 # RunLength decoder implementation based on PDF Reference
 # version 1.4 section 3.3.4.

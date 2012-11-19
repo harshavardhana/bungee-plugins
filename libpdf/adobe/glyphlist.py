@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 
 """ Mappings from Adobe glyph names to Unicode characters.
 

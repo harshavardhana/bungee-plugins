@@ -1,8 +1,9 @@
-from meta import mime_type
+# -*- coding: utf-8 -*-
+from fileutils.mime import mime_type
 
 meta_library_lookup = {
     'metaudio':  ['audio/mpeg', 'audio/ogg',
-                  'audio/x-wav', 'audio/flac']
+                  'audio/x-wav', 'audio/flac'],
     'metavideo': ['video/x-matroska', 'video/mpeg',
                   'video/quicktime', 'video/ms-video'],
     'metadocument': ['application/pdf', 'application/msword',

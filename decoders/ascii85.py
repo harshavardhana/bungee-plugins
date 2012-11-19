@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 
 ## Python implementation of ASCII85/ASCIIHex decoder.
 
@@ -65,7 +65,7 @@ def asciihexdecode(data):
     'p'
     """
     decode = (lambda hx: chr(int(hx, 16)))
-    out = map(decode, hex_re.findall(data))
+    out = list(map(decode, hex_re.findall(data)))
     m = trail_re.search(data)
     if m:
         out.append(decode("%c0" % m.group(1)))

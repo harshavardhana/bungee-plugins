@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 
 """ Font metrics for the Adobe core 14 fonts.
 

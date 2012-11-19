@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ## STOLEN from libmagic man page
 
 MAGIC_NONE = 0x000000 # No flags

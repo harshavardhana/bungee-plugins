@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 
 """ Standard encoding tables used in PDF.
 

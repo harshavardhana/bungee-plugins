@@ -1,5 +1,5 @@
-#!/usr/bin/env python2
-from psparser import LIT
+# -*- coding: utf-8 -*-
+from libpdf.psparser import LIT
 
 
 ##  PDFColorSpace
@@ -20,7 +20,7 @@ class PDFColorSpace(object):
 
 
 PREDEFINED_COLORSPACE = dict(
-  (name, PDFColorSpace(name,n)) for (name,n) in {
+  (name, PDFColorSpace(name,n)) for (name,n) in list({
   'CalRGB': 3,
   'CalGray': 1,
   'Lab': 3,
@@ -30,4 +30,4 @@ PREDEFINED_COLORSPACE = dict(
   'Separation': 1,
   'Indexed': 1,
   'Pattern': 1,
-  }.iteritems())
+  }.items()))

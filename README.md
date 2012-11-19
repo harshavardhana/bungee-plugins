@@ -1,4 +1,6 @@
-Bungee Plugin repository
+Bungee Plugin repository 
+
+All the python modules inside this project need Python3 and above installed.
 
 TODO:
 

@@ -1,9 +1,8 @@
-#!/usr/bin/env python2
-
+# -*- coding: utf-8 -*-
 import re
-from psparser import PSLiteral
-from adobe.glyphlist import glyphname2unicode
-from latin_enc import ENCODING
+from libpdf.psparser import PSLiteral
+from libpdf.adobe.glyphlist import glyphname2unicode
+from libpdf.latin_enc import ENCODING
 
 
 ##  name2unicode
@@ -15,7 +14,7 @@ def name2unicode(name):
         return glyphname2unicode[name]
     m = STRIP_NAME.search(name)
     if not m: raise KeyError(name)
-    return unichr(int(m.group(0)))
+    return chr(int(m.group(0)))
 
 
 ##  EncodingDB
