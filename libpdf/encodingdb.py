@@ -2,7 +2,7 @@
 
 import re
 from psparser import PSLiteral
-from glyphlist import glyphname2unicode
+from adobe.glyphlist import glyphname2unicode
 from latin_enc import ENCODING
 
 

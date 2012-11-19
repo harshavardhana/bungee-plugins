@@ -5,7 +5,9 @@ try:
     from cStringIO import StringIO
 except ImportError:
     from StringIO import StringIO
-from cmapdb import CMapDB, CMapParser, FileUnicodeMap, CMap
+from adobe.cmapdb import CMapDB, CMapParser, FileUnicodeMap, CMap
+from adobe.fontmetrics import FONT_METRICS
+
 from encodingdb import EncodingDB, name2unicode
 from psparser import PSStackParser
 from psparser import PSSyntaxError, PSEOF
@@ -14,7 +16,7 @@ from psparser import PSLiteral, literal_name
 from pdftypes import PDFException, resolve1
 from pdftypes import int_value, float_value, num_value
 from pdftypes import str_value, list_value, dict_value, stream_value
-from fontmetrics import FONT_METRICS
+
 from utils import apply_matrix_norm, nunpack, choplist
 
 

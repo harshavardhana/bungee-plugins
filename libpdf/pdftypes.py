@@ -1,9 +1,10 @@
 #!/usr/bin/env python2
 import sys
 import zlib
-from lzw import lzwdecode
-from ascii85 import ascii85decode, asciihexdecode
-from runlength import rldecode
+
+from decoders.lzw import lzwdecode
+from decoders.ascii85 import ascii85decode, asciihexdecode
+from decoders.runlength import rldecode
 from psparser import PSException, PSObject
 from psparser import LIT, KWD, STRICT
 

@@ -5,7 +5,8 @@ try:
     from cStringIO import StringIO
 except ImportError:
     from StringIO import StringIO
-from cmapdb import CMapDB, CMap
+from adobe.cmapdb import CMapDB, CMap
+
 from psparser import PSException, PSTypeError, PSEOF
 from psparser import PSKeyword, literal_name, keyword_name
 from psparser import PSStackParser
@@ -23,6 +24,7 @@ from pdfcolor import PDFColorSpace
 from pdfcolor import PREDEFINED_COLORSPACE
 from pdfcolor import LITERAL_DEVICE_GRAY, LITERAL_DEVICE_RGB
 from pdfcolor import LITERAL_DEVICE_CMYK
+
 from utils import choplist
 from utils import mult_matrix, MATRIX_IDENTITY
 

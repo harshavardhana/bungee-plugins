@@ -1,16 +1,13 @@
 #!/usr/bin/env python2
 #
-# RunLength decoder (Adobe version) implementation based on PDF Reference
+# RunLength decoder implementation based on PDF Reference
 # version 1.4 section 3.3.4.
-#
-#  * public domain *
-#
 
 import sys
 
 def rldecode(data):
     """
-    RunLength decoder (Adobe version) implementation based on PDF Reference
+    RunLength decoder implementation based on PDF Reference
     version 1.4 section 3.3.4:
         The RunLengthDecode filter decodes data that has been encoded in a
         simple byte-oriented format based on run length. The encoded data

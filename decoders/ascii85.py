@@ -1,10 +1,6 @@
 #!/usr/bin/env python2
 
-""" Python implementation of ASCII85/ASCIIHex decoder (Adobe version).
-
-This code is in the public domain.
-
-"""
+## Python implementation of ASCII85/ASCIIHex decoder.
 
 import re
 import struct
