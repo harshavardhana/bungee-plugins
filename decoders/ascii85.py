@@ -70,8 +70,3 @@ def asciihexdecode(data):
     if m:
         out.append(decode("%c0" % m.group(1)))
     return ''.join(out)
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

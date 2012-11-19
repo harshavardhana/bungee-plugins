@@ -7,8 +7,6 @@ from io import StringIO
 ##
 class LZWDecoder(object):
 
-    debug = 0
-
     def __init__(self, fp):
         self.fp = fp
         self.buff = 0
@@ -16,7 +14,7 @@ class LZWDecoder(object):
         self.nbits = 9
         self.table = None
         self.prevbuf = None
-        return
+        self.debug = 0
 
     def readbits(self, bits):
         v = 0
@@ -82,9 +80,8 @@ class LZWDecoder(object):
             if self.debug:
                 print(('nbits=%d, code=%d, output=%r, table=%r' %
                        (self.nbits, code, x, self.table[258:])))
-        return
 
-# lzwdecode
+# Wrapper function lzwdecode
 def lzwdecode(data):
     """
     >>> lzwdecode('\x80\x0b\x60\x50\x22\x0c\x0c\x85\x01')
@@ -92,7 +89,3 @@ def lzwdecode(data):
     """
     fp = StringIO(data)
     return ''.join(LZWDecoder(fp).run())
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
