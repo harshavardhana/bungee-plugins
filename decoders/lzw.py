@@ -14,7 +14,6 @@ class LZWDecoder(object):
         self.nbits = 9
         self.table = None
         self.prevbuf = None
-        self.debug = 0
 
     def readbits(self, bits):
         v = 0
@@ -77,9 +76,6 @@ class LZWDecoder(object):
                 break
             x = self.feed(code)
             yield x
-            if self.debug:
-                print(('nbits=%d, code=%d, output=%r, table=%r' %
-                       (self.nbits, code, x, self.table[258:])))
 
 # Wrapper function lzwdecode
 def lzwdecode(data):
