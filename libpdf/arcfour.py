@@ -37,8 +37,3 @@ class Arcfour(object):
             r += chr(ord(c) ^ k)
         (self.i, self.j) = (i, j)
         return r
-
-# test
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
