@@ -5,8 +5,8 @@ import zlib
 from decoders.lzw import lzwdecode
 from decoders.ascii85 import ascii85decode, asciihexdecode
 from decoders.runlength import rldecode
-from libpdf.psparser import PSException, PSObject
-from libpdf.psparser import LIT, KWD, STRICT
+from pypdf.psparser import PSException, PSObject
+from pypdf.psparser import LIT, KWD, STRICT
 
 LITERAL_CRYPT = LIT('Crypt')
 

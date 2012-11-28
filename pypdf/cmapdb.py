@@ -20,12 +20,12 @@ import pickle as pickle
 import cmap
 import struct
 
-from libpdf.psparser import PSStackParser
-from libpdf.psparser import PSException, PSSyntaxError, PSTypeError, PSEOF
-from libpdf.psparser import PSLiteral, PSKeyword
-from libpdf.psparser import literal_name, keyword_name
-from libpdf.encodingdb import name2unicode
-from libpdf.utils import choplist, nunpack
+from pypdf.psparser import PSStackParser
+from pypdf.psparser import PSException, PSSyntaxError, PSTypeError, PSEOF
+from pypdf.psparser import PSLiteral, PSKeyword
+from pypdf.psparser import literal_name, keyword_name
+from pypdf.encodingdb import name2unicode
+from pypdf.utils import choplist, nunpack
 
 class CMapError(Exception): pass
 

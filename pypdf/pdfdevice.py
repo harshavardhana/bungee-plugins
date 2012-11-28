@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
-from libpdf.utils import mult_matrix, translate_matrix
-from libpdf.utils import enc, bbox2str
-from libpdf.pdffont import PDFUnicodeNotDefined
+from pypdf.utils import mult_matrix, translate_matrix
+from pypdf.utils import enc, bbox2str
+from pypdf.pdffont import PDFUnicodeNotDefined
 
 
 ##  PDFDevice

@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 import sys, os.path
-from libpdf.pdfdevice import PDFDevice, PDFTextDevice
-from libpdf.pdffont import PDFUnicodeNotDefined
-from libpdf.pdftypes import LITERALS_DCT_DECODE
-from libpdf.pdfcolor import LITERAL_DEVICE_GRAY, LITERAL_DEVICE_RGB
-from libpdf.layout import LTContainer, LTPage, LTText, LTLine, LTRect, LTCurve
-from libpdf.layout import LTFigure, LTImage, LTChar, LTTextLine
-from libpdf.layout import LTTextBox, LTTextBoxVertical, LTTextGroup
-from libpdf.utils import apply_matrix_pt, mult_matrix
-from libpdf.utils import enc, bbox2str, create_bmp
+from pypdf.pdfdevice import PDFDevice, PDFTextDevice
+from pypdf.pdffont import PDFUnicodeNotDefined
+from pypdf.pdftypes import LITERALS_DCT_DECODE
+from pypdf.pdfcolor import LITERAL_DEVICE_GRAY, LITERAL_DEVICE_RGB
+from pypdf.layout import LTContainer, LTPage, LTText, LTLine, LTRect, LTCurve
+from pypdf.layout import LTFigure, LTImage, LTChar, LTTextLine
+from pypdf.layout import LTTextBox, LTTextBoxVertical, LTTextGroup
+from pypdf.utils import apply_matrix_pt, mult_matrix
+from pypdf.utils import enc, bbox2str, create_bmp
 
 
 ##  PDFLayoutAnalyzer

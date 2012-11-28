@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import re
-from libpdf.utils import choplist
+from pypdf.utils import choplist
 
 STRICT = 0
 

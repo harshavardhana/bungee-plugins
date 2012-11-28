@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from libpdf.psparser import LIT
+from pypdf.psparser import LIT
 
 
 ##  PDFColorSpace

@@ -4,19 +4,19 @@ import struct
 
 from io import StringIO
 
-from libpdf.cmapdb import CMapDB, CMapParser, FileUnicodeMap, CMap
-from libpdf.adobe.fontmetrics import FONT_METRICS
+from pypdf.cmapdb import CMapDB, CMapParser, FileUnicodeMap, CMap
+from pypdf.adobe.fontmetrics import FONT_METRICS
 
-from libpdf.encodingdb import EncodingDB, name2unicode
-from libpdf.psparser import PSStackParser
-from libpdf.psparser import PSSyntaxError, PSEOF
-from libpdf.psparser import LIT, KWD, STRICT
-from libpdf.psparser import PSLiteral, literal_name
-from libpdf.pdftypes import PDFException, resolve1
-from libpdf.pdftypes import int_value, float_value, num_value
-from libpdf.pdftypes import str_value, list_value, dict_value, stream_value
+from pypdf.encodingdb import EncodingDB, name2unicode
+from pypdf.psparser import PSStackParser
+from pypdf.psparser import PSSyntaxError, PSEOF
+from pypdf.psparser import LIT, KWD, STRICT
+from pypdf.psparser import PSLiteral, literal_name
+from pypdf.pdftypes import PDFException, resolve1
+from pypdf.pdftypes import int_value, float_value, num_value
+from pypdf.pdftypes import str_value, list_value, dict_value, stream_value
 
-from libpdf.utils import apply_matrix_norm, nunpack, choplist
+from pypdf.utils import apply_matrix_norm, nunpack, choplist
 
 def get_widths(seq):
     widths = {}

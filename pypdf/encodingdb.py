@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import re
-from libpdf.psparser import PSLiteral
-from libpdf.adobe.glyphlist import glyphname2unicode
-from libpdf.latin_enc import ENCODING
+from pypdf.psparser import PSLiteral
+from pypdf.adobe.glyphlist import glyphname2unicode
+from pypdf.latin_enc import ENCODING
 
 
 ##  name2unicode

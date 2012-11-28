@@ -4,28 +4,28 @@ import re
 
 from io import StringIO
 
-from libpdf.cmapdb import CMapDB, CMap
+from pypdf.cmapdb import CMapDB, CMap
 
-from libpdf.psparser import PSException, PSTypeError, PSEOF
-from libpdf.psparser import PSKeyword, literal_name, keyword_name
-from libpdf.psparser import PSStackParser
-from libpdf.psparser import LIT, KWD, STRICT
-from libpdf.pdftypes import PDFException, PDFStream, PDFObjRef
-from libpdf.pdftypes import resolve1
-from libpdf.pdftypes import int_value, float_value, num_value
-from libpdf.pdftypes import str_value, list_value, dict_value, stream_value
-from libpdf.pdffont import PDFFontError
-from libpdf.pdffont import PDFType1Font, PDFTrueTypeFont, PDFType3Font
-from libpdf.pdffont import PDFCIDFont
-from libpdf.pdfparser import PDFDocument, PDFParser
-from libpdf.pdfparser import PDFPasswordIncorrect
-from libpdf.pdfcolor import PDFColorSpace
-from libpdf.pdfcolor import PREDEFINED_COLORSPACE
-from libpdf.pdfcolor import LITERAL_DEVICE_GRAY, LITERAL_DEVICE_RGB
-from libpdf.pdfcolor import LITERAL_DEVICE_CMYK
+from pypdf.psparser import PSException, PSTypeError, PSEOF
+from pypdf.psparser import PSKeyword, literal_name, keyword_name
+from pypdf.psparser import PSStackParser
+from pypdf.psparser import LIT, KWD, STRICT
+from pypdf.pdftypes import PDFException, PDFStream, PDFObjRef
+from pypdf.pdftypes import resolve1
+from pypdf.pdftypes import int_value, float_value, num_value
+from pypdf.pdftypes import str_value, list_value, dict_value, stream_value
+from pypdf.pdffont import PDFFontError
+from pypdf.pdffont import PDFType1Font, PDFTrueTypeFont, PDFType3Font
+from pypdf.pdffont import PDFCIDFont
+from pypdf.pdfparser import PDFDocument, PDFParser
+from pypdf.pdfparser import PDFPasswordIncorrect
+from pypdf.pdfcolor import PDFColorSpace
+from pypdf.pdfcolor import PREDEFINED_COLORSPACE
+from pypdf.pdfcolor import LITERAL_DEVICE_GRAY, LITERAL_DEVICE_RGB
+from pypdf.pdfcolor import LITERAL_DEVICE_CMYK
 
-from libpdf.utils import choplist
-from libpdf.utils import mult_matrix, MATRIX_IDENTITY
+from pypdf.utils import choplist
+from pypdf.utils import mult_matrix, MATRIX_IDENTITY
 
 
 ##  Exceptions

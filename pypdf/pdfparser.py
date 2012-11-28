@@ -9,18 +9,18 @@ except ImportError:
 
 from io import StringIO
 
-from libpdf.psparser import PSStackParser
-from libpdf.psparser import PSSyntaxError, PSEOF
-from libpdf.psparser import literal_name
-from libpdf.psparser import LIT, KWD, STRICT
-from libpdf.pdftypes import PDFException, PDFTypeError, PDFNotImplementedError
-from libpdf.pdftypes import PDFStream, PDFObjRef
-from libpdf.pdftypes import resolve1, decipher_all
-from libpdf.pdftypes import int_value, float_value, num_value
-from libpdf.pdftypes import str_value, list_value, dict_value, stream_value
-from libpdf.arcfour import Arcfour
-from libpdf.utils import choplist, nunpack
-from libpdf.utils import decode_text, ObjIdRange
+from pypdf.psparser import PSStackParser
+from pypdf.psparser import PSSyntaxError, PSEOF
+from pypdf.psparser import literal_name
+from pypdf.psparser import LIT, KWD, STRICT
+from pypdf.pdftypes import PDFException, PDFTypeError, PDFNotImplementedError
+from pypdf.pdftypes import PDFStream, PDFObjRef
+from pypdf.pdftypes import resolve1, decipher_all
+from pypdf.pdftypes import int_value, float_value, num_value
+from pypdf.pdftypes import str_value, list_value, dict_value, stream_value
+from pypdf.arcfour import Arcfour
+from pypdf.utils import choplist, nunpack
+from pypdf.utils import decode_text, ObjIdRange
 
 
 ##  Exceptions

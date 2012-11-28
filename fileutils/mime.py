@@ -2,8 +2,8 @@
 import sys
 import os.path
 
-from libmagic.constants import *
-from libmagic import magic_load, magic_open, magic_close, magic_buffer
+from pymagic.constants import *
+from pymagic import magic_load, magic_open, magic_close, magic_buffer
 
 def mime_type(fd):
     """

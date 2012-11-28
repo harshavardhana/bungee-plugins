@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
-from libpdf.utils import INF, Plane, get_bound, uniq, csort, fsplit
-from libpdf.utils import bbox2str, matrix2str, apply_matrix_pt
+from pypdf.utils import INF, Plane, get_bound, uniq, csort, fsplit
+from pypdf.utils import bbox2str, matrix2str, apply_matrix_pt
 
 
 ##  IndexAssigner
