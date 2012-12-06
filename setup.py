@@ -34,6 +34,7 @@ setup(
     packages=["encryption", "encryption.decoders",
               "fileutils", "fs", "pymagic", "pypdf",
               "pypdf.adobe"],
+    requires=['xattr'],
     classifiers=[
         "Development Status :: 4 - Alpha",
         "Environment :: Console",
