@@ -16,8 +16,7 @@ limitations under the License.
 import os
 import sys
 
-try: from distutils.core import setup
-except ImportError: from setuptools import setup
+from setuptools import setup
 
 if sys.argv[-1] == "test":
     os.system ("ln tests/bungee_plugins_test.py test.py")
@@ -34,7 +33,7 @@ setup(
     packages=["encryption", "encryption.decoders",
               "fileutils", "fs", "pymagic", "pypdf",
               "pypdf.adobe"],
-    requires=['xattr'],
+    install_requires=['xattr'],
     classifiers=[
         "Development Status :: 4 - Alpha",
         "Environment :: Console",
